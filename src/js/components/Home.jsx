@@ -26,7 +26,7 @@ const [purpuraEncendido,setPurpuraEncendido] = useState(false);
                     className={`verde ${colorEncendido === "verde" ? "brillo" : ""}`}
                     onClick={() => setColorEncendido("verde")}
                 ></div>
-              {purpuraEncendido && (
+              { purpuraEncendido === true && (
                     <div 
                         className={`luz purpura ${colorEncendido === "purpura" ? "brillo" : ""}`}
                         onClick={() => setColorEncendido("purpura")}
